@@ -3,13 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.75">
     <title>To-do-list</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
 </head>
 <body>
-    <section class="to-do-section">
-        <div class="to-do-box">
-            <h1><span>"</span> Things to Do</h1>
+    <section class="to-do-section center">
+        <!-- to do input box -->
+        <div class="to-do-box center">
+            <h1><span>'</span> Things to Do <span>'</span></h1>
+            <textarea name="to-do" id="toDoTextArea" cols="30" rows="5" placeholder="Write your to-do-list">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere fuga enim quas iste suscipit magnam id omnis hic deleniti laudantium accusantium ut, nulla magni quo adipisci. Laboriosam voluptas maiores alias?
+            </textarea>
+            <button onclick="addList()">Add to list</button>
+        </div>
+        <!-- to do list -->
+
+        <div class="to-do-list center">
         </div>
     </section>
 </body>

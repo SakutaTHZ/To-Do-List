@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.5s ease-in-out;
+}
+
+:root{
+    --background-color:#65625E;
+    --text-color:#FFFDB4;
+    --secondary-color:#D2ABFC;
+    --highlight-color:#8BEBDA;
+    --extra-color: #F290C2;
+}
+
+body{
+    background: var(--background-color);
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.to-do-section{
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100vh;
+    padding: 40px 0;
+}
+.to-do-section::before{
+    content: '';
+    position: absolute;
+    background: var(--secondary-color);
+    width: 100%;
+    height: 25px;
+    top: 0;
+}
+
+.to-do-box{
+    position: relative;
+    flex-direction: column;
+    width: 500px;
+    gap: 5px;
+}
+.to-do-box>*{
+    width: 100%;
+    padding: 10px;
+}
+.to-do-box>h1{
+    font-size: 2em;
+    text-align: center;
+    color: var(--text-color);
+}
+.to-do-box>h1>span{
+    color: var(--highlight-color);
+}
+.to-do-box>textarea{
+    background: var(--text-color);
+    outline: 1px solid transparent;
+    border-radius: 10px 10px 0 0 ;
+    resize: vertical;
+}
+.to-do-box>button{
+    background: var(--secondary-color);
+    border: 0;
+    border-radius: 0 0 10px 10px;
+    transform: translateY(-5px);
+    cursor: pointer;
+    color: var(--background-color);
+    letter-spacing: 1px;
+}
+.to-do-box>button:hover{
+    background: var(--highlight-color);
+}
+
+.to-do-list{
+    width: 520px;
+    height: 80vh;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+    /* background: #8BEBDA; */
+    overflow: hidden;
+    overflow-y: scroll;
+    cursor: n-resize;
+}
+.to-do-list::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .to-do-list {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+.todolist{
+    position: relative;
+    width: 100%;
+    color: var(--text-color);
+    border-left: 3px solid var(--extra-color);
+    padding: 10px 30px 10px 10px;
+    
+    display: flex;
+    align-items: center;
+}
+.todolist:hover{
+    background: #F290C220;
+}
+.todolist>button{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background: transparent;
+    border: 0;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+}
+.todolist>button::before,.todolist>button::after{
+    position: absolute;
+    content: '';
+    width: 15px;
+    height:3px;
+    background: var(--extra-color);
+    transform: none;
+    transition: 0.5s ease-in-out;
+}
+.todolist button:hover::before{
+    transform: rotate(45deg);
+    background: var(--highlight-color);
+}
+.todolist button:hover::after{
+    transform: rotate(-45deg);
+    background: var(--highlight-color);
+}
