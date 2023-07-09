@@ -14,14 +14,18 @@
         <!-- to do input box -->
         <div class="to-do-box center">
             <h1><span>'</span> Things to Do <span>'</span></h1>
-            <textarea name="to-do" id="toDoTextArea" cols="30" rows="5" placeholder="Write your to-do-list">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere fuga enim quas iste suscipit magnam id omnis hic deleniti laudantium accusantium ut, nulla magni quo adipisci. Laboriosam voluptas maiores alias?
-            </textarea>
+            <textarea autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" name="to-do" id="toDoTextArea" cols="30" rows="5" placeholder="Write your to-do-list">Have to code some logical Solutions</textarea>
             <button onclick="addList()">Add to list</button>
         </div>
         <!-- to do list -->
+        <div class="to-do-list center"></div>
 
-        <div class="to-do-list center">
-        </div>
+        <svg class="wavy" width="100%" height="100%" id="svg" viewBox="0 0 1000 100" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150">
+        <defs><linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%"><stop offset="5%" stop-color="#f78da7"></stop><stop offset="95%" stop-color="#8ed1fc"></stop></linearGradient></defs><path d="M 0,600 C 0,600 0,150 0,150 C 42.3777614138439,178.82142857142856 84.7555228276878,207.64285714285714 151,206 C 217.2444771723122,204.35714285714286 307.3556701030928,172.25 368,153 C 428.6443298969072,133.75 459.8217967599411,127.35714285714286 521,143 C 582.1782032400589,158.64285714285714 673.3571428571428,196.32142857142858 730,203 C 786.6428571428572,209.67857142857142 808.7496318114876,185.35714285714286 870,166 C 931.2503681885124,146.64285714285714 1031.6443298969073,132.24999999999997 1109,122 C 1186.3556701030927,111.75000000000003 1240.6730486008835,105.64285714285715 1292,111 C 1343.3269513991165,116.35714285714285 1391.6634756995581,133.17857142857142 1440,150 C 1440,150 1440,600 1440,600 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="0.4" class="transition-all duration-300 ease-in-out delay-150 path-0"></path>
+        <defs><linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%"><stop offset="5%" stop-color="#f78da7"></stop><stop offset="95%" stop-color="#8ed1fc"></stop></linearGradient></defs><path d="M 0,600 C 0,600 0,300 0,300 C 65.03516200294551,306.5775036818851 130.07032400589102,313.15500736377027 188,311 C 245.92967599410898,308.84499263622973 296.75386597938143,297.95747422680415 348,304 C 399.24613402061857,310.04252577319585 450.9142120765832,333.01509572901324 511,320 C 571.0857879234168,306.98490427098676 639.5892857142858,257.9821428571429 699,259 C 758.4107142857142,260.0178571428571 808.7286450662739,311.0563328424153 868,320 C 927.2713549337261,328.9436671575847 995.4961340206187,295.79252577319585 1071,291 C 1146.5038659793813,286.20747422680415 1229.2868188512518,309.7735640648012 1292,316 C 1354.7131811487482,322.2264359351988 1397.356590574374,311.11321796759944 1440,300 C 1440,300 1440,600 1440,600 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="0.53" class="transition-all duration-300 ease-in-out delay-150 path-1"></path>
+        <defs><linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%"><stop offset="5%" stop-color="#f78da7"></stop><stop offset="95%" stop-color="#8ed1fc"></stop></linearGradient></defs><path d="M 0,600 C 0,600 0,450 0,450 C 64.41310751104568,467.43722385861565 128.82621502209136,484.87444771723125 182,476 C 235.17378497790864,467.12555228276875 277.10824742268034,431.9394329896907 334,412 C 390.89175257731966,392.0605670103093 462.7407952871871,387.3678203240059 536,396 C 609.2592047128129,404.6321796759941 683.9285714285714,426.5892857142857 739,431 C 794.0714285714286,435.4107142857143 829.5449189985272,422.2750368188513 892,415 C 954.4550810014728,407.7249631811487 1043.8917525773195,406.3105670103093 1105,405 C 1166.1082474226805,403.6894329896907 1198.8880706921943,402.48269513991164 1250,410 C 1301.1119293078057,417.51730486008836 1370.5559646539027,433.7586524300442 1440,450 C 1440,450 1440,600 1440,600 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-2"></path>
+        </svg>
+
     </section>
 </body>
 </html>
